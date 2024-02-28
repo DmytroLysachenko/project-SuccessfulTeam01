@@ -11,7 +11,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <script type="module" crossorigin src="/project-SuccessfulTeam01/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/project-SuccessfulTeam01/assets/index-f03bf253.css">
+  <link rel="stylesheet" href="/project-SuccessfulTeam01/assets/index-9d30c3a1.css">
 </head>
 
 <body>
@@ -493,7 +493,85 @@
 </section>
 <!-- #endregion -->
 
-    
+    <section class="section" id="contact">
+  <div class="container">
+    <h2 class="contact-title">Contact US</h2>
+    <div class="contact-div-common">
+      <div class="contact-div-forma">
+        <p class="contact-p">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <forma>
+          <label class="contact-label" for="contact-name"></label>
+          <input
+            class="contact-input"
+            type="text"
+            name="contact-name"
+            id="contact-name"
+            placeholder="Name"
+            minlength="2"
+            pattern="[a-zA-Z]+\s[a-zA-Z]*"
+            title="Name must be two words separated by space"
+            required
+          />
+          <label class="contact-label" for="contact-email"></label>
+          <input
+            class="contact-input"
+            type="email"
+            name="contact-email"
+            id="contact-email"
+            placeholder="Email"
+            required
+          />
+          <label class="contact-label" for="contact-tel"></label>
+          <input
+            class="contact-input"
+            type="tel"
+            name="contact-tel"
+            id="contact-tel"
+            placeholder="+380"
+            required
+          />
+          <label class="contact-label" for="contacts-comment"></label>
+          <textarea
+            class="contact-textarea"
+            name="contact-comment"
+            id="user-comment"
+            rows="3"
+            placeholder="Comment"
+          ></textarea>
+          <button class="contact-btn" type="submit" aria-label="send">
+            Send
+          </button>
+        </forma>
+      </div>
+      <div class="contact-div-img">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/project-SuccessfulTeam01/assets/contact-desk@1x-ede91bf7.png 1x, /project-SuccessfulTeam01/assets/contact-desk@2x-d3b0f6be.png 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-SuccessfulTeam01/assets/contact-tab@1x-f38058cf.png 1x, /project-SuccessfulTeam01/assets/contact-tab@2x-d3ad5a5d.png 2x"
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="/project-SuccessfulTeam01/assets/contact-mob@1x-83d23f46.png 1x, /project-SuccessfulTeam01/assets/contact-mob@2x-4cbbb4ef.png 2x"
+          />
+
+          <img
+            src="/project-SuccessfulTeam01/assets/contact-mob@1x-83d23f46.png"
+            alt="contact us image"
+            class="contact-img"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <footer class="section footer-section">
