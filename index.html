@@ -11,7 +11,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <script type="module" crossorigin src="/project-SuccessfulTeam01/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/project-SuccessfulTeam01/assets/index-844d2b80.css">
+  <link rel="stylesheet" href="/project-SuccessfulTeam01/assets/index-6e29ab09.css">
 </head>
 
 <body>
@@ -507,10 +507,10 @@
     <div class="contact-div-common">
       <div class="contact-div-forma">
         <p class="contact-p">
-          Please use the form below to contact us. Enter your name, email,
-          phone, and message and we'll get back to you shortly.
+          Please use the form below to contact us. Enter your name, email, phone, and message and
+          we'll get back to you shortly.
         </p>
-        <forma>
+        <form name="contact-us">
           <label class="contact-label" for="contact-name"></label>
           <input
             class="contact-input"
@@ -530,6 +530,8 @@
             name="contact-email"
             id="contact-email"
             placeholder="Email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            title="Address must contain symbols, @ sign, symbols, dot symbol, minimum 2 characters"
             required
           />
           <label class="contact-label" for="contact-tel"></label>
@@ -539,20 +541,22 @@
             name="contact-tel"
             id="contact-tel"
             placeholder="+380"
+            pattern="[0-9]{12}"
+            title="The number must contain 12 digits"
             required
           />
-          <label class="contact-label" for="contacts-comment"></label>
+          <label class="contact-label" for="contact-comment"></label>
           <textarea
             class="contact-textarea"
             name="contact-comment"
-            id="user-comment"
+            id="contact-comment"
             rows="3"
             placeholder="Comment"
+            minlength="10"
+            title="The comment must contain at least 10 characters"
           ></textarea>
-          <button class="contact-btn" type="submit" aria-label="send">
-            Send
-          </button>
-        </forma>
+          <button class="contact-btn" type="submit" aria-label="send">Send</button>
+        </form>
       </div>
       <div class="contact-div-img">
         <picture>
@@ -573,6 +577,7 @@
             src="/project-SuccessfulTeam01/assets/contact-mob@1x-83d23f46.png"
             alt="contact us image"
             class="contact-img"
+            loading="lazy"
           />
         </picture>
       </div>
