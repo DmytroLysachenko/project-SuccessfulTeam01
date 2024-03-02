@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watchcharm</title>
+    <link rel="icon" type="image/svg+xml" href="/project-SuccessfulTeam01/assets/favicon-4bc1398f.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    
+    <script type="module" crossorigin src="/project-SuccessfulTeam01/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/project-SuccessfulTeam01/assets/index-d285f319.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Watchcharm</title>
-  <link rel="icon" type="image/svg+xml" href="/project-SuccessfulTeam01/assets/favicon-4bc1398f.svg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <script type="module" crossorigin src="/project-SuccessfulTeam01/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/project-SuccessfulTeam01/assets/index-df5c767d.css">
-</head>
-
-<body>
-  <div id="preloader">
+  <body>
+    <div id="preloader">
   <div class="inner">
     <div class="clock">
       <div class="minute"></div>
@@ -23,6 +29,12 @@
     </div>
     <span>Loading</span>
   </div>
+</div>
+
+<div id="progress">
+  <span id="progress-value">
+    <i class="bx bx-chevrons-up"></i>
+  </span>
 </div>
 
 <header class="header" id="home">
@@ -104,8 +116,8 @@
   </div>
 </header>
 
-  <main>
-    <section id="hero" class="section hero">
+    <main>
+      <section id="hero" class="section hero">
   <div class="container">
     <div class="hero-wrap">
       <div class="hero-content">
@@ -148,7 +160,7 @@
     </div>
   </div>
 </section>
-    <section id="about" class="section about-us">
+      <section id="about" class="section about-us">
   <div class="container about-us">
     <div class="about-descr">
       <h2 class="title-about-us">About Us</h2>
@@ -190,7 +202,7 @@
   </div>
 </section>
 
-    <section id="catalog" class="section catalog">
+      <section id="catalog" class="section catalog">
   <div class="container">
     <h2 class="catalog-title">Catalog</h2>
     <ul class="catalog-list">
@@ -411,7 +423,7 @@
   </div>
 </section>
 
-    <section class="section">
+      <section class="section">
     <div class="container adventure">
         <div class="adventure-wrap">
             <h2 class="visually-hidden advertisement-title">Adventure</h2>
@@ -423,7 +435,7 @@
         </div>
     </div>
 </section>
-    <div class="section" id="sale">
+      <div class="section" id="sale">
   <div class="container sale">
     <h2 class="sale-title">Sale</h2>
     <div class="sale-wrapper">
@@ -562,11 +574,11 @@
   </div>
 </div>
 
-    <!-- #region Reviews -->
+      <!-- #region Reviews -->
 <section class="section" id="reviews">
   <div class="container">
     <h2 class="reviews-title">Reviews</h2>
-    <ul class="reviews-list">
+    <ul class="reviews-list slick-slider">
       <li class="reviews-item">
         <img
           class="reviews-img"
@@ -617,12 +629,29 @@
           my daily life.
         </p>
       </li>
+      <li class="reviews-item">
+        <img
+          class="reviews-img"
+          srcset="/project-SuccessfulTeam01/assets/mark-guerrero@1x-2f678229.png 1x, /project-SuccessfulTeam01/assets/mark-guerrero@2x-9ed89eea.png 2x"
+          src="/project-SuccessfulTeam01/assets/mark-guerrero@1x-2f678229.png"
+          alt="Anastasia Trachuk"
+          width="56"
+          height="56"
+          loading="lazy"
+        />
+        <h3 class="reviews-h">Mark Guerrero</h3>
+        <p class="reviews-p">
+          Can't take my eyes off my watch from. Every time I put it on, it is admired by those
+          around me. The build quality and attention to detail make it a real gem among my
+          accessories.
+        </p>
+      </li>
     </ul>
   </div>
 </section>
 <!-- #endregion -->
 
-    <section class="section" id="contact">
+      <section class="section" id="contact">
   <div class="container">
     <h2 class="contact-title">Contact Us</h2>
     <div class="contact-div-common">
@@ -706,9 +735,9 @@
   </div>
 </section>
 
-  </main>
+    </main>
 
-  <footer class="section footer-section" id="footer">
+    <footer class="section footer-section" id="footer">
   <div class="footer-container">
     <div class="footer-top-container">
       <div class="footer-logo-social-container">
@@ -807,7 +836,7 @@
   </div>
 </footer>
 
-  <!--Header-mobile-modal-menu-->
+    <!--Header-mobile-modal-menu-->
 <div class="mobile-menu" data-modal-mobile>
   <button type="button" class="close-svg-mobile" data-modal-close-mobile>
     <svg class="modal-close-svg-mobile svg" width="34" height="34">
@@ -881,7 +910,9 @@
 <!--Header-mobile-modal-menu-end-->
 
 
-  
-</body>
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    
+  </body>
 </html>
